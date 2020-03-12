@@ -111,8 +111,6 @@ import java.awt.Font;
 //It's a truckload coming on the interstate
 //Sirloin steak all on my dinner plate
 //Your main bitch say she wanna make a sex tape
-//
-//Rich nigga, I could never be a broke nigga (rich nigga)
 
 public class Dictionary {
 
