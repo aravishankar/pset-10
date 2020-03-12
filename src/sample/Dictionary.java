@@ -105,7 +105,6 @@ import java.awt.Font;
 //[Verse 1 - Takeoff:]
 //If you know me notice that my feng shui
 //Certified everywhere, ain't gotta print my resume
-//Talking crazy, I pull up andele
 
 public class Dictionary {
 
