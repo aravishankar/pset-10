@@ -78,12 +78,6 @@ import java.awt.Font;
 //With this regard their currents turn awry
 //And lose the name of action.
 //
-//[Intro:]
-//If you know me this ain't my feng shui
-//Certified everywhere, ain't gonna print my resume
-//Talking crazy, I pull up andele
-//R.I.P to Nate Dogg, I had to regulate
-//
 
 public class Dictionary {
 
