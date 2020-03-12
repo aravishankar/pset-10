@@ -123,7 +123,6 @@ import java.awt.Font;
 //Float like a butterly, sting like a bee
 //Rumble young nigga rumble!
 //Lil' mamma want a nigga like me in the sheets
-//Ice cube knock it out like Deebo
 
 
 public class Dictionary {
