@@ -151,7 +151,6 @@ import java.awt.Font;
 //Bottles in the VIP while I stand on the sofa
 //I don't speak your language Brokanese, I thought I told ya
 //These bitches they be smokin' on hookah
-//My nigga ballin' like boodoos
 
 public class Dictionary {
 
