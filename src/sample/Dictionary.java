@@ -59,15 +59,6 @@ import java.awt.Font;
 //Must give us pause—there's the respect
 //That makes calamity of so long life.
 //For who would bear the whips and scorns of time,
-//Th'oppressor's wrong, the proud man's contumely,
-//The pangs of dispriz'd love, the law's delay,
-//The insolence of office, and the spurns
-//That patient merit of th'unworthy takes,
-//When he himself might his quietus make
-//With a bare bodkin? Who would fardels bear,
-//To grunt and sweat under a weary life,
-//But that the dread of something after death,
-//The undiscovere'd country, from whose bourn
 
 public class Dictionary {
 
