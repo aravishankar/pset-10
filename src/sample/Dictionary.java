@@ -131,7 +131,6 @@ import java.awt.Font;
 //Let them know that this a whole lot of cash
 //
 //Rich niggas on the right all night (rich nigga)
-//Broke niggas to the left by yourself (brokanese)
 
 public class Dictionary {
 
