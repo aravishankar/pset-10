@@ -107,7 +107,6 @@ import java.awt.Font;
 //Certified everywhere, ain't gotta print my resume
 //Talking crazy, I pull up andele
 //R.I.P to Nate Dogg, I had to regulate
-//Pocket rocket fire, watch him disintegrate
 
 public class Dictionary {
 
