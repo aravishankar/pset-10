@@ -146,8 +146,6 @@ import java.awt.Font;
 //If your bitch is so innocent, why she sucking my children
 //Last time I asked I dine and dashed and bitch I go in the building
 //Bad bitch make it clap let me know ya
-//Young rich nigga on the couch talking to Oprah
-//
 
 public class Dictionary {
 
