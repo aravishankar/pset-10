@@ -6,7 +6,6 @@ import javax.swing.DefaultListModel;
 
 public class Utils {
 
-//  Returns the classpath for json file
 	public static String getClasspathDir() {
 		String classpath = System.getProperty("java.class.path", ".");
 		boolean windows = false;
@@ -35,19 +34,19 @@ public class Utils {
 	}
 
 //  Sorts DLM in ascending order
-	public static DefaultListModel<String> sortWordsAsc(DefaultListModel<String> listOfWords) {
+	public static DefaultListModel<String> sortWordsAsc(DefaultListModel<String> wordList) {
 		String temp;
-		int n = listOfWords.getSize();
+		int n = wordList.getSize();
 		for (int i = 0; i < n; i++) {
 			for (int j = i + 1; j < n; j++) {
-				if ((listOfWords.get(i).compareTo(listOfWords.get(j)) > 0)) {
-					temp = listOfWords.get(i);
-					listOfWords.set(i, listOfWords.get(j));
-					listOfWords.set(j, temp);
+				if ((wordList.get(i).compareTo(wordList.get(j)) > 0)) {
+					temp = wordList.get(i);
+					wordList.set(i, wordList.get(j));
+					wordList.set(j, temp);
 				}
 			}
 		}
-		return listOfWords;
+		return wordList;
 	}
 
 //  Reverse the order of a DLM

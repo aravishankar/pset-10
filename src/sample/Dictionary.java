@@ -36,7 +36,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import javax.swing.JPanel;
 import java.awt.Color;
@@ -46,11 +45,11 @@ import java.awt.Font;
 
 public class Dictionary {
 
-	private JFrame frmDictionary;
+	private JFrame dictionaryFrame;
 	private JTextField txtSearch;
 	private final ButtonGroup buttonGroup = new ButtonGroup();
 	private JTextField textField;
-	private JTextField txtDefinitions;
+	private JTextField definitionsTextField;
 	private JTextField textField_2;
 	private JTextField textField_1;
 	private JTextField textField_3;
@@ -61,7 +60,7 @@ public class Dictionary {
 			public void run() {
 				try {
 					Dictionary window = new Dictionary();
-					window.frmDictionary.setVisible(true);
+					window.dictionaryFrame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -74,12 +73,12 @@ public class Dictionary {
 		String classpathDirectory = Utils.getClasspathDir();
 		BufferedReader br = new BufferedReader(new FileReader(classpathDirectory + "words.json"));
 		Word[] words = gson.fromJson(br, Word[].class);
-		DefaultListModel<String> listOfWords = new DefaultListModel<String>();
+		DefaultListModel<String> wordList = new DefaultListModel<String>();
 		for (Word word : words) {
-			listOfWords.addElement(word.getWord().toLowerCase());
+			wordList.addElement(word.getWord().toLowerCase());
 		}
 		;
-		return Utils.sortWordsAsc(listOfWords);
+		return Utils.sortWordsAsc(wordList);
 	}
 
 	private static ArrayList<Word> getWordClass() throws FileNotFoundException {
@@ -87,12 +86,12 @@ public class Dictionary {
 		String classpathDirectory = Utils.getClasspathDir();
 		BufferedReader br = new BufferedReader(new FileReader(classpathDirectory + "words.json"));
 		Word[] words = gson.fromJson(br, Word[].class);
-		ArrayList<Word> listOfWords = new ArrayList<Word>();
+		ArrayList<Word> wordList = new ArrayList<Word>();
 		for (Word word : words) {
-			listOfWords.add(word);
+			wordList.add(word);
 		}
 		;
-		return listOfWords;
+		return wordList;
 	}
 
 	public Dictionary() throws FileNotFoundException, BadLocationException {
@@ -100,17 +99,17 @@ public class Dictionary {
 	}
 
 	private void initialize() throws FileNotFoundException, BadLocationException {
-		frmDictionary = new JFrame();
-		frmDictionary.getContentPane().setBackground(Color.PINK);
-		frmDictionary.setResizable(false);
-		frmDictionary.setTitle("Le Dictionary");
-		frmDictionary.setBounds(100, 100, 800, 600);
-		frmDictionary.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frmDictionary.getContentPane().setLayout(null);
+		dictionaryFrame = new JFrame();
+		dictionaryFrame.getContentPane().setBackground(Color.PINK);
+		dictionaryFrame.setResizable(false);
+		dictionaryFrame.setTitle("Le Dictionary");
+		dictionaryFrame.setBounds(100, 100, 800, 600);
+		dictionaryFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		dictionaryFrame.getContentPane().setLayout(null);
 
 		JPanel panel = new JPanel();
 		panel.setBounds(207, 11, 566, 549);
-		frmDictionary.getContentPane().add(panel);
+		dictionaryFrame.getContentPane().add(panel);
 		panel.setLayout(new CardLayout(0, 0));
 
 		JScrollPane scrollPane_3 = new JScrollPane();
@@ -145,12 +144,12 @@ public class Dictionary {
 		lblDefinitions.setBounds(10, 107, 199, 54);
 		panel_1.add(lblDefinitions);
 
-		txtDefinitions = new JTextField();
-		txtDefinitions.setFont(new Font("Lato", Font.PLAIN, 11));
-		txtDefinitions.setBackground(new Color(230, 230, 250));
-		txtDefinitions.setColumns(10);
-		txtDefinitions.setBounds(20, 182, 286, 20);
-		panel_1.add(txtDefinitions);
+		definitionsTextField = new JTextField();
+		definitionsTextField.setFont(new Font("Lato", Font.PLAIN, 11));
+		definitionsTextField.setBackground(new Color(230, 230, 250));
+		definitionsTextField.setColumns(10);
+		definitionsTextField.setBounds(20, 182, 286, 20);
+		panel_1.add(definitionsTextField);
 
 		textField_2 = new JTextField();
 		textField_2.setFont(new Font("Lato", Font.PLAIN, 11));
@@ -250,7 +249,7 @@ public class Dictionary {
 
 		JScrollPane scrollPane_1 = new JScrollPane();
 		scrollPane_1.setBounds(12, 114, 179, 446);
-		frmDictionary.getContentPane().add(scrollPane_1);
+		dictionaryFrame.getContentPane().add(scrollPane_1);
 
 		JList<String> list = new JList<String>();
 		list.addListSelectionListener(new ListSelectionListener() {
@@ -327,11 +326,10 @@ public class Dictionary {
 
 		JButton btnNewButton = new JButton("Add");
 		btnNewButton.addActionListener(new ActionListener() {
-//	      add
 			public void actionPerformed(ActionEvent e) {
 				cardLayout.show(panel, "addWord");
 				textField.setText("");
-				txtDefinitions.setText("");
+				definitionsTextField.setText("");
 				textField_2.setText("");
 				textField_1.setText("");
 				textField_3.setText("");
@@ -339,12 +337,12 @@ public class Dictionary {
 			}
 		});
 		btnNewButton.setBounds(2, 11, 89, 23);
-		frmDictionary.getContentPane().add(btnNewButton);
+		dictionaryFrame.getContentPane().add(btnNewButton);
 
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String word = textField.getText().toLowerCase();
-				String definitionInput = txtDefinitions.getText().toLowerCase();
+				String definitionInput = definitionsTextField.getText().toLowerCase();
 				String posInput = textField_2.getText().toLowerCase();
 				String synonymInput = textField_1.getText().toLowerCase();
 				String antonymsInput = textField_3.getText().toLowerCase();
@@ -492,20 +490,20 @@ public class Dictionary {
 		});
 
 		btnNewButton_1.setBounds(101, 11, 89, 23);
-		frmDictionary.getContentPane().add(btnNewButton_1);
+		dictionaryFrame.getContentPane().add(btnNewButton_1);
 
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(490, 332, -57, -98);
-		frmDictionary.getContentPane().add(scrollPane);
+		dictionaryFrame.getContentPane().add(scrollPane);
 
 		buttonGroup.add(rdbtnNewRadioButton);
 		rdbtnNewRadioButton.setBounds(36, 78, 59, 23);
-		frmDictionary.getContentPane().add(rdbtnNewRadioButton);
+		dictionaryFrame.getContentPane().add(rdbtnNewRadioButton);
 		rdbtnNewRadioButton.setSelected(true);
 
 		buttonGroup.add(rdbtnNewRadioButton_1);
 		rdbtnNewRadioButton_1.setBounds(110, 78, 59, 23);
-		frmDictionary.getContentPane().add(rdbtnNewRadioButton_1);
+		dictionaryFrame.getContentPane().add(rdbtnNewRadioButton_1);
 		rdbtnNewRadioButton_1.addItemListener(new ItemListener() {
 			@Override
 			public void itemStateChanged(ItemEvent event) {
@@ -610,7 +608,7 @@ public class Dictionary {
 			}
 		});
 		txtSearch.setBounds(12, 45, 179, 20);
-		frmDictionary.getContentPane().add(txtSearch);
+		dictionaryFrame.getContentPane().add(txtSearch);
 		txtSearch.setColumns(10);
 	}
 }
