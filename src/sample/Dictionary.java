@@ -90,9 +90,6 @@ import java.awt.Font;
 //
 //[Hook - Takeoff:]
 //Broke niggas stand to the left
-//My rich niggas stand to the right
-//Lil' mamma, she keep looking at me (lil' mama!)
-//I'm a knock the pussy out like fight night
 
 public class Dictionary {
 
