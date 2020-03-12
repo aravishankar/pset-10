@@ -152,7 +152,6 @@ import java.awt.Font;
 //I don't speak your language Brokanese, I thought I told ya
 //These bitches they be smokin' on hookah
 //My nigga ballin' like boodoos
-//Geeked up in the Double R, I scare ya bitch, Freddy Krueger
 
 public class Dictionary {
 
