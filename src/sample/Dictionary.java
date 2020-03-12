@@ -134,9 +134,6 @@ import java.awt.Font;
 //Broke niggas to the left by yourself (brokanese)
 //Now who the hell just said that the roof on fire?
 //Call 911 like Wyclef
-//
-//[Hook]
-//
 
 public class Dictionary {
 
