@@ -137,7 +137,6 @@ import java.awt.Font;
 //
 //[Hook]
 //
-//[Verse 3 - Offset:]
 
 public class Dictionary {
 
