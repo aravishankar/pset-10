@@ -128,8 +128,7 @@ import java.awt.Font;
 //Now who's that talking that gangsta shit
 //Somebody gonna kick your ass
 //When I walk up in the club I better make a thunderstorm
-//Let them know that this a whole lot of cash
-//
+
 
 public class Dictionary {
 
