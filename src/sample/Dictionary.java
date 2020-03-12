@@ -138,7 +138,6 @@ import java.awt.Font;
 //[Hook]
 //
 //[Verse 3 - Offset:]
-//I'm a rich nigga, I don't like a bitch nigga
 
 public class Dictionary {
 
