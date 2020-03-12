@@ -154,8 +154,6 @@ import java.awt.Font;
 //My nigga ballin' like boodoos
 //Geeked up in the Double R, I scare ya bitch, Freddy Krueger
 //Flooded Franck Muller
-//
-//[Hook]
 
 public class Dictionary {
 
