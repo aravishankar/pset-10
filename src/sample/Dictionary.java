@@ -110,7 +110,6 @@ import java.awt.Font;
 //Pocket rocket fire, watch him disintegrate
 //It's a truckload coming on the interstate
 //Sirloin steak all on my dinner plate
-//Your main bitch say she wanna make a sex tape
 
 public class Dictionary {
 
