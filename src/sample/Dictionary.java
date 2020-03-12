@@ -149,7 +149,6 @@ import java.awt.Font;
 //Young rich nigga on the couch talking to Oprah
 //
 //Bottles in the VIP while I stand on the sofa
-//I don't speak your language Brokanese, I thought I told ya
 
 public class Dictionary {
 
