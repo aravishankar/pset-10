@@ -109,7 +109,6 @@ import java.awt.Font;
 //R.I.P to Nate Dogg, I had to regulate
 //Pocket rocket fire, watch him disintegrate
 //It's a truckload coming on the interstate
-//Sirloin steak all on my dinner plate
 
 public class Dictionary {
 
