@@ -140,10 +140,6 @@ import java.awt.Font;
 //[Verse 3 - Offset:]
 //I'm a rich nigga, I don't like a bitch nigga
 //Nigga broke nigga, I don't deal with you
-//All of my niggas, official, My bitches they strippers
-//My niggas they criminals trying to get to the M&Ms
-//
-//If your bitch is so innocent, why she sucking my children
 
 public class Dictionary {
 
