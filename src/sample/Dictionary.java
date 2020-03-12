@@ -153,7 +153,6 @@ import java.awt.Font;
 //These bitches they be smokin' on hookah
 //My nigga ballin' like boodoos
 //Geeked up in the Double R, I scare ya bitch, Freddy Krueger
-//Flooded Franck Muller
 
 public class Dictionary {
 
