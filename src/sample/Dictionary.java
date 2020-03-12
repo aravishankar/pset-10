@@ -132,7 +132,6 @@ import java.awt.Font;
 //
 //Rich niggas on the right all night (rich nigga)
 //Broke niggas to the left by yourself (brokanese)
-//Now who the hell just said that the roof on fire?
 
 public class Dictionary {
 
