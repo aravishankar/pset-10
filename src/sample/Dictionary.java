@@ -126,8 +126,7 @@ import java.awt.Font;
 //Ice cube knock it out like Deebo
 //
 //Now who's that talking that gangsta shit
-//Somebody gonna kick your ass
-//When I walk up in the club I better make a thunderstorm
+
 
 
 public class Dictionary {
