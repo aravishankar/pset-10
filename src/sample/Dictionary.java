@@ -108,7 +108,6 @@ import java.awt.Font;
 //Talking crazy, I pull up andele
 //R.I.P to Nate Dogg, I had to regulate
 //Pocket rocket fire, watch him disintegrate
-//It's a truckload coming on the interstate
 
 public class Dictionary {
 
