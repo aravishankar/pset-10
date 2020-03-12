@@ -103,7 +103,7 @@ public class Dictionary {
 		frmDictionary = new JFrame();
 		frmDictionary.getContentPane().setBackground(Color.PINK);
 		frmDictionary.setResizable(false);
-		frmDictionary.setTitle("Dictionary");
+		frmDictionary.setTitle("Le Dictionary");
 		frmDictionary.setBounds(100, 100, 800, 600);
 		frmDictionary.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmDictionary.getContentPane().setLayout(null);
@@ -117,7 +117,6 @@ public class Dictionary {
 		panel.add(scrollPane_3, "addWord");
 
 		JPanel panel_1 = new JPanel();
-//		panel_1.setToolTipText("");
 		panel_1.setBackground(new Color(255, 255, 255));
 		scrollPane_3.setViewportView(panel_1);
 		panel_1.setLayout(null);
@@ -130,7 +129,6 @@ public class Dictionary {
 		textField = new JTextField();
 		textField.setFont(new Font("Lato", Font.PLAIN, 11));
 		textField.setBackground(new Color(230, 230, 250));
-//		textField.setToolTipText("word");
 		textField.setBounds(20, 76, 286, 20);
 		panel_1.add(textField);
 		textField.setColumns(10);
@@ -150,7 +148,6 @@ public class Dictionary {
 		txtDefinitions = new JTextField();
 		txtDefinitions.setFont(new Font("Lato", Font.PLAIN, 11));
 		txtDefinitions.setBackground(new Color(230, 230, 250));
-//		txtDefinitions.setToolTipText("Definitions");
 		txtDefinitions.setColumns(10);
 		txtDefinitions.setBounds(20, 182, 286, 20);
 		panel_1.add(txtDefinitions);
@@ -158,7 +155,6 @@ public class Dictionary {
 		textField_2 = new JTextField();
 		textField_2.setFont(new Font("Lato", Font.PLAIN, 11));
 		textField_2.setBackground(new Color(230, 230, 250));
-//		textField_2.setToolTipText("Part of Speech");
 		textField_2.setColumns(10);
 		textField_2.setBounds(20, 482, 147, 20);
 		panel_1.add(textField_2);
@@ -176,7 +172,6 @@ public class Dictionary {
 		textField_1 = new JTextField();
 		textField_1.setFont(new Font("Lato", Font.PLAIN, 11));
 		textField_1.setBackground(new Color(230, 230, 250));
-//		textField_1.setToolTipText("synonym");
 		textField_1.setColumns(10);
 		textField_1.setBounds(20, 287, 286, 20);
 		panel_1.add(textField_1);
@@ -209,7 +204,6 @@ public class Dictionary {
 		textField_3 = new JTextField();
 		textField_3.setFont(new Font("Lato", Font.PLAIN, 11));
 		textField_3.setBackground(new Color(230, 230, 250));
-//		textField_3.setToolTipText("antonyms");
 		textField_3.setColumns(10);
 		textField_3.setBounds(20, 400, 286, 20);
 		panel_1.add(textField_3);
@@ -615,7 +609,6 @@ public class Dictionary {
 
 			}
 		});
-//		txtSearch.setToolTipText("Search");
 		txtSearch.setBounds(12, 45, 179, 20);
 		frmDictionary.getContentPane().add(txtSearch);
 		txtSearch.setColumns(10);
