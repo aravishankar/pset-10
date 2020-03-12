@@ -84,12 +84,6 @@ import java.awt.Font;
 //Talking crazy, I pull up andele
 //R.I.P to Nate Dogg, I had to regulate
 //
-//Public Service Announcement
-//Where all my rich niggas at man?
-//MIGO!
-//
-//[Hook - Takeoff:]
-//Broke niggas stand to the left
 
 public class Dictionary {
 
