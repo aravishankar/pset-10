@@ -168,11 +168,6 @@ public class Dictionary {
 	private JTextField textField_1;
 	private JTextField textField_3;
 
-	/**
-	 * Launch the application.
-	 * 
-	 * @throws FileNotFoundException
-	 */
 	public static void main(String[] args) throws FileNotFoundException {
 		getWords();
 		EventQueue.invokeLater(new Runnable() {
@@ -187,7 +182,6 @@ public class Dictionary {
 		});
 	}
 
-	// get DLM of words sorted in asc order
 	private static DefaultListModel<String> getWords() throws FileNotFoundException {
 		Gson gson = new Gson();
 		String classpathDirectory = Utils.getClasspathDir();
@@ -201,7 +195,6 @@ public class Dictionary {
 		return Utils.sortWordsAsc(listOfWords);
 	}
 
-	// get ArrayList of words sorted in asc order
 	private static ArrayList<Word> getWordClass() throws FileNotFoundException {
 		Gson gson = new Gson();
 		String classpathDirectory = Utils.getClasspathDir();
@@ -215,24 +208,13 @@ public class Dictionary {
 		return listOfWords;
 	}
 
-	/**
-	 * Create the application.
-	 * 
-	 * @throws FileNotFoundException
-	 * @throws BadLocationException
-	 */
 	public Dictionary() throws FileNotFoundException, BadLocationException {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 * 
-	 * @throws FileNotFoundException
-	 * @throws BadLocationException
-	 */
 	private void initialize() throws FileNotFoundException, BadLocationException {
 		frmDictionary = new JFrame();
+		frmDictionary.getContentPane().setBackground(Color.PINK);
 		frmDictionary.setResizable(false);
 		frmDictionary.setTitle("Dictionary");
 		frmDictionary.setBounds(100, 100, 800, 600);
@@ -248,93 +230,106 @@ public class Dictionary {
 		panel.add(scrollPane_3, "addWord");
 
 		JPanel panel_1 = new JPanel();
-		panel_1.setToolTipText("");
-		panel_1.setBackground(Color.WHITE);
+//		panel_1.setToolTipText("");
+		panel_1.setBackground(new Color(255, 255, 255));
 		scrollPane_3.setViewportView(panel_1);
 		panel_1.setLayout(null);
 
 		JLabel lblNewLabel = new JLabel("Word*");
-		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 32));
+		lblNewLabel.setFont(new Font("Comic Sans MS", Font.BOLD, 32));
 		lblNewLabel.setBounds(10, 11, 117, 54);
 		panel_1.add(lblNewLabel);
 
 		textField = new JTextField();
-		textField.setToolTipText("word");
+		textField.setFont(new Font("Lato", Font.PLAIN, 11));
+		textField.setBackground(new Color(230, 230, 250));
+//		textField.setToolTipText("word");
 		textField.setBounds(20, 76, 286, 20);
 		panel_1.add(textField);
 		textField.setColumns(10);
 
 		JButton btnNewButton_2 = new JButton("Add");
-		btnNewButton_2.setBounds(465, 513, 89, 23);
+		btnNewButton_2.setFont(new Font("Impact", Font.PLAIN, 36));
+		btnNewButton_2.setForeground(new Color(255, 255, 255));
+		btnNewButton_2.setBackground(new Color(255, 0, 0));
+		btnNewButton_2.setBounds(427, 11, 127, 127);
 		panel_1.add(btnNewButton_2);
 
 		JLabel lblDefinitions = new JLabel("Definitions*");
-		lblDefinitions.setFont(new Font("Tahoma", Font.BOLD, 32));
+		lblDefinitions.setFont(new Font("Comic Sans MS", Font.BOLD, 32));
 		lblDefinitions.setBounds(10, 107, 199, 54);
 		panel_1.add(lblDefinitions);
 
 		txtDefinitions = new JTextField();
-		txtDefinitions.setToolTipText("Definitions");
+		txtDefinitions.setFont(new Font("Lato", Font.PLAIN, 11));
+		txtDefinitions.setBackground(new Color(230, 230, 250));
+//		txtDefinitions.setToolTipText("Definitions");
 		txtDefinitions.setColumns(10);
 		txtDefinitions.setBounds(20, 182, 286, 20);
 		panel_1.add(txtDefinitions);
 
 		textField_2 = new JTextField();
-		textField_2.setToolTipText("Part of Speech");
+		textField_2.setFont(new Font("Lato", Font.PLAIN, 11));
+		textField_2.setBackground(new Color(230, 230, 250));
+//		textField_2.setToolTipText("Part of Speech");
 		textField_2.setColumns(10);
-		textField_2.setBounds(346, 182, 147, 20);
+		textField_2.setBounds(20, 482, 147, 20);
 		panel_1.add(textField_2);
 
 		JLabel lblPartOfSpech = new JLabel("Parts of Speech*");
-		lblPartOfSpech.setFont(new Font("Tahoma", Font.BOLD, 18));
-		lblPartOfSpech.setBounds(336, 130, 157, 20);
+		lblPartOfSpech.setFont(new Font("Comic Sans MS", Font.BOLD, 18));
+		lblPartOfSpech.setBounds(20, 437, 157, 20);
 		panel_1.add(lblPartOfSpech);
 
 		JLabel lblSynonyms = new JLabel("Synonyms");
-		lblSynonyms.setFont(new Font("Tahoma", Font.BOLD, 32));
+		lblSynonyms.setFont(new Font("Comic Sans MS", Font.BOLD, 32));
 		lblSynonyms.setBounds(10, 213, 184, 54);
 		panel_1.add(lblSynonyms);
 
 		textField_1 = new JTextField();
-		textField_1.setToolTipText("synonym");
+		textField_1.setFont(new Font("Lato", Font.PLAIN, 11));
+		textField_1.setBackground(new Color(230, 230, 250));
+//		textField_1.setToolTipText("synonym");
 		textField_1.setColumns(10);
 		textField_1.setBounds(20, 287, 286, 20);
 		panel_1.add(textField_1);
 
 		JLabel lblSeperateByComma = new JLabel("Seperate by comma");
-		lblSeperateByComma.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		lblSeperateByComma.setFont(new Font("Calibri", Font.PLAIN, 12));
 		lblSeperateByComma.setBounds(20, 264, 137, 20);
 		panel_1.add(lblSeperateByComma);
 
 		JLabel label = new JLabel("Seperate by comma");
-		label.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		label.setFont(new Font("Calibri", Font.PLAIN, 12));
 		label.setBounds(20, 157, 137, 20);
 		panel_1.add(label);
 
 		JLabel label_1 = new JLabel("Seperate by comma");
-		label_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		label_1.setBounds(346, 161, 137, 20);
+		label_1.setFont(new Font("Calibri", Font.PLAIN, 12));
+		label_1.setBounds(20, 457, 137, 20);
 		panel_1.add(label_1);
 
 		JLabel lblAntonyms = new JLabel("Antonyms");
-		lblAntonyms.setFont(new Font("Tahoma", Font.BOLD, 32));
+		lblAntonyms.setFont(new Font("Comic Sans MS", Font.BOLD, 32));
 		lblAntonyms.setBounds(10, 318, 184, 54);
 		panel_1.add(lblAntonyms);
 
 		JLabel label_2 = new JLabel("Seperate by comma");
-		label_2.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		label_2.setFont(new Font("Calibri", Font.PLAIN, 12));
 		label_2.setBounds(20, 369, 137, 20);
 		panel_1.add(label_2);
 
 		textField_3 = new JTextField();
-		textField_3.setToolTipText("antonyms");
+		textField_3.setFont(new Font("Lato", Font.PLAIN, 11));
+		textField_3.setBackground(new Color(230, 230, 250));
+//		textField_3.setToolTipText("antonyms");
 		textField_3.setColumns(10);
 		textField_3.setBounds(20, 400, 286, 20);
 		panel_1.add(textField_3);
 
-		JLabel lblRequred = new JLabel("* = required");
-		lblRequred.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblRequred.setBounds(20, 513, 137, 20);
+		JLabel lblRequred = new JLabel("* = required field");
+		lblRequred.setFont(new Font("DialogInput", Font.PLAIN, 20));
+		lblRequred.setBounds(329, 516, 225, 20);
 		panel_1.add(lblRequred);
 
 		JScrollPane scrollPane_2 = new JScrollPane();
@@ -356,7 +351,6 @@ public class Dictionary {
 		Style bigWord = textPane.addStyle("Style", null);
 		Style header = textPane.addStyle("Style", null);
 		StyleConstants.setFontSize(header, 20);
-//	    StyleConstants.setBold(header, true);
 		StyleConstants.setFontSize(bigWord, 36);
 		StyleConstants.setBold(bigWord, true);
 
@@ -538,7 +532,6 @@ public class Dictionary {
 
 		JButton btnNewButton_1 = new JButton("Remove");
 		btnNewButton_1.addActionListener(new ActionListener() {
-//	      remove
 			public void actionPerformed(ActionEvent arg0) {
 				List<String> selectedWords = list.getSelectedValuesList();
 				try {
@@ -633,7 +626,6 @@ public class Dictionary {
 		rdbtnNewRadioButton_1.setBounds(110, 78, 59, 23);
 		frmDictionary.getContentPane().add(rdbtnNewRadioButton_1);
 		rdbtnNewRadioButton_1.addItemListener(new ItemListener() {
-//	       select asc or desc order
 			@Override
 			public void itemStateChanged(ItemEvent event) {
 
@@ -689,7 +681,6 @@ public class Dictionary {
 		txtSearch = new JTextField();
 		txtSearch.addKeyListener(new KeyAdapter() {
 			@Override
-//	      search box
 			public void keyReleased(KeyEvent e) {
 				String searched = txtSearch.getText().toLowerCase();
 				DefaultListModel<String> words = new DefaultListModel<String>();
@@ -737,7 +728,7 @@ public class Dictionary {
 
 			}
 		});
-		txtSearch.setToolTipText("Search");
+//		txtSearch.setToolTipText("Search");
 		txtSearch.setBounds(12, 45, 179, 20);
 		frmDictionary.getContentPane().add(txtSearch);
 		txtSearch.setColumns(10);
