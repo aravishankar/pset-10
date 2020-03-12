@@ -130,7 +130,6 @@ import java.awt.Font;
 //When I walk up in the club I better make a thunderstorm
 //Let them know that this a whole lot of cash
 //
-//Rich niggas on the right all night (rich nigga)
 
 public class Dictionary {
 
