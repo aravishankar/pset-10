@@ -119,9 +119,6 @@ import java.awt.Font;
 //
 //[Hook]
 //
-//[Verse 2 - Quavo:]
-//Float like a butterly, sting like a bee
-
 
 public class Dictionary {
 
