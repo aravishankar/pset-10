@@ -148,7 +148,6 @@ import java.awt.Font;
 //Bad bitch make it clap let me know ya
 //Young rich nigga on the couch talking to Oprah
 //
-//Bottles in the VIP while I stand on the sofa
 
 public class Dictionary {
 
