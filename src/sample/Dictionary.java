@@ -113,8 +113,6 @@ import java.awt.Font;
 //Your main bitch say she wanna make a sex tape
 //
 //Rich nigga, I could never be a broke nigga (rich nigga)
-//Broke niggas I can never get along with them!
-//Always been hated since a little nigga (always)
 
 public class Dictionary {
 
