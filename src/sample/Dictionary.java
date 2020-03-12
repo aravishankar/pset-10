@@ -116,9 +116,6 @@ import java.awt.Font;
 //Broke niggas I can never get along with them!
 //Always been hated since a little nigga (always)
 //It's forever pussy nigga gotta deal with it (rich nigga!)
-//
-//[Hook]
-//
 
 public class Dictionary {
 
