@@ -122,7 +122,6 @@ import java.awt.Font;
 //[Verse 2 - Quavo:]
 //Float like a butterly, sting like a bee
 //Rumble young nigga rumble!
-//Lil' mamma want a nigga like me in the sheets
 
 
 public class Dictionary {
