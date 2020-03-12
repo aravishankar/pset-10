@@ -103,7 +103,6 @@ import java.awt.Font;
 //I'm a knock the pussy out like fight night
 //
 //[Verse 1 - Takeoff:]
-//If you know me notice that my feng shui
 
 public class Dictionary {
 
