@@ -100,7 +100,6 @@ import java.awt.Font;
 //
 //Beat it with the left
 //Beat it with the right
-//I'm a knock the pussy out like fight night
 
 public class Dictionary {
 
