@@ -124,9 +124,6 @@ import java.awt.Font;
 //Rumble young nigga rumble!
 //Lil' mamma want a nigga like me in the sheets
 //Ice cube knock it out like Deebo
-//
-//Now who's that talking that gangsta shit
-
 
 
 public class Dictionary {
