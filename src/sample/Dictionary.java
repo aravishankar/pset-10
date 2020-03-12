@@ -106,7 +106,6 @@ import java.awt.Font;
 //If you know me notice that my feng shui
 //Certified everywhere, ain't gotta print my resume
 //Talking crazy, I pull up andele
-//R.I.P to Nate Dogg, I had to regulate
 
 public class Dictionary {
 
