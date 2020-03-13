@@ -235,11 +235,11 @@ public class Dictionary {
 		StyleConstants.setBold(bigWord, true);
 
 		doc.remove(0, doc.getLength());
-		doc.insertString(doc.getLength(), "Example Word\n", bigWord);
+		doc.insertString(doc.getLength(), "Choose a word to start\n", bigWord);
 		doc.insertString(doc.getLength(), "\n", null);
 		doc.insertString(doc.getLength(), "Definitions\n", header);
 		doc.insertString(doc.getLength(), "\n", null);
-		doc.insertString(doc.getLength(), "1. Example Word (pos) \n\n    Definition of example word\n\n", null);
+		doc.insertString(doc.getLength(), "1. Example Word (pos) \n\n    No definitions to display.  Choose a word.\n\n", null);
 		doc.insertString(doc.getLength(), "\n", null);
 		doc.insertString(doc.getLength(), "Synonyms\n", header);
 		doc.insertString(doc.getLength(), "\n1.Synonym ", null);
@@ -475,11 +475,11 @@ public class Dictionary {
 					list.setModel(DLM);
 					txtSearch.setText("");
 					doc.remove(0, doc.getLength());
-					doc.insertString(doc.getLength(), "Example Word\n", bigWord);
+					doc.insertString(doc.getLength(), "Choose a word to start\n", bigWord);
 					doc.insertString(doc.getLength(), "\n", null);
 					doc.insertString(doc.getLength(), "Definitions\n", header);
 					doc.insertString(doc.getLength(), "\n", null);
-					doc.insertString(doc.getLength(), "1. Example Word (pos) \n\n    Definition of example word\n\n",
+					doc.insertString(doc.getLength(), "1. Example Word (pos) \n\n    No definitions to display.  Choose a word.\n\n",
 							null);
 					doc.insertString(doc.getLength(), "\n", null);
 					doc.insertString(doc.getLength(), "Synonyms\n", header);
@@ -520,12 +520,12 @@ public class Dictionary {
 						txtSearch.setText("");
 						list.setModel(Utils.reverseOrder(getWords()));
 						doc.remove(0, doc.getLength());
-						doc.insertString(doc.getLength(), "Example Word\n", bigWord);
+						doc.insertString(doc.getLength(), "Choose a word to start\n", bigWord);
 						doc.insertString(doc.getLength(), "\n", null);
 						doc.insertString(doc.getLength(), "Definitions\n", header);
 						doc.insertString(doc.getLength(), "\n", null);
 						doc.insertString(doc.getLength(),
-								"1. Example Word (pos) \n\n    Definition of example word\n\n", null);
+								"1. Example Word (pos) \n\n    No definitions to display.  Choose a word.\n\n", null);
 						doc.insertString(doc.getLength(), "\n", null);
 						doc.insertString(doc.getLength(), "Synonyms\n", header);
 						doc.insertString(doc.getLength(), "\n1.Synonym ", null);
@@ -542,12 +542,12 @@ public class Dictionary {
 						txtSearch.setText("");
 						list.setModel(getWords());
 						doc.remove(0, doc.getLength());
-						doc.insertString(doc.getLength(), "Example Word\n", bigWord);
+						doc.insertString(doc.getLength(), "Choose a word to start\n", bigWord);
 						doc.insertString(doc.getLength(), "\n", null);
 						doc.insertString(doc.getLength(), "Definitions\n", header);
 						doc.insertString(doc.getLength(), "\n", null);
 						doc.insertString(doc.getLength(),
-								"1. Example Word (pos) \n\n    Definition of example word\n\n", null);
+								"1. Example Word (pos) \n\n    No definitions to display.  Choose a word.\n\n", null);
 						doc.insertString(doc.getLength(), "\n", null);
 						doc.insertString(doc.getLength(), "Synonyms\n", header);
 						doc.insertString(doc.getLength(), "\n1.Synonym ", null);
@@ -594,11 +594,11 @@ public class Dictionary {
 				list.setModel(filtered);
 				try {
 					doc.remove(0, doc.getLength());
-					doc.insertString(doc.getLength(), "Example Word\n", bigWord);
+					doc.insertString(doc.getLength(), "Choose a word to start\n", bigWord);
 					doc.insertString(doc.getLength(), "\n", null);
 					doc.insertString(doc.getLength(), "Definitions\n", header);
 					doc.insertString(doc.getLength(), "\n", null);
-					doc.insertString(doc.getLength(), "1. Example Word (pos) \n\n    Definition of example word\n\n",
+					doc.insertString(doc.getLength(), "1. Example Word (pos) \n\n    No definitions to display.  Choose a word.\n\n",
 							null);
 					doc.insertString(doc.getLength(), "\n", null);
 					doc.insertString(doc.getLength(), "Synonyms\n", header);
