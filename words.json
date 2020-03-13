@@ -831,23 +831,6 @@
     ]
   },
   {
-    "word": "archive",
-    "definitions": [
-      {
-        "definition": "put into an archive",
-        "partOfSpeech": "verb"
-      },
-      {
-        "definition": "a depository containing historical records and documents",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "file away"
-    ],
-    "antonyms": []
-  },
-  {
     "word": "station",
     "definitions": [
       {
@@ -1905,23 +1888,6 @@
     ],
     "synonyms": [
       "listen in"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "anxiety",
-    "definitions": [
-      {
-        "definition": "(psychiatry) a relatively permanent state of worry and nervousness occurring in a variety of mental disorders, usually accompanied by compulsive behavior or attacks of panic",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a vague unpleasant emotion that is experienced in anticipation of some (usually ill-defined) misfortune",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "anxiousness"
     ],
     "antonyms": []
   },

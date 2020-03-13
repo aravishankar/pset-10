@@ -242,10 +242,10 @@ public class Dictionary {
 		doc.insertString(doc.getLength(), "1. Example Word (pos) \n\n    No definitions to display.  Choose a word.\n\n", null);
 		doc.insertString(doc.getLength(), "\n", null);
 		doc.insertString(doc.getLength(), "Synonyms\n", header);
-		doc.insertString(doc.getLength(), "\n1.Synonym ", null);
+		doc.insertString(doc.getLength(), "\n1.No Synonyms to display.  Choose a word. ", null);
 		doc.insertString(doc.getLength(), "\n\n", null);
 		doc.insertString(doc.getLength(), "Antonyms\n", header);
-		doc.insertString(doc.getLength(), "\n1.Antonym ", null);
+		doc.insertString(doc.getLength(), "\n1.No Antonyms to display.  Choose a word. ", null);
 
 		JScrollPane scrollPane_1 = new JScrollPane();
 		scrollPane_1.setBounds(12, 114, 179, 446);
@@ -483,10 +483,10 @@ public class Dictionary {
 							null);
 					doc.insertString(doc.getLength(), "\n", null);
 					doc.insertString(doc.getLength(), "Synonyms\n", header);
-					doc.insertString(doc.getLength(), "\n1.Synonym ", null);
+					doc.insertString(doc.getLength(), "\n1.No Synonyms to display.  Choose a word. ", null);
 					doc.insertString(doc.getLength(), "\n\n", null);
 					doc.insertString(doc.getLength(), "Antonyms\n", header);
-					doc.insertString(doc.getLength(), "\n1.Antonym ", null);
+					doc.insertString(doc.getLength(), "\n1.No Antonyms to display.  Choose a word. ", null);
 				} catch (BadLocationException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -528,10 +528,10 @@ public class Dictionary {
 								"1. Example Word (pos) \n\n    No definitions to display.  Choose a word.\n\n", null);
 						doc.insertString(doc.getLength(), "\n", null);
 						doc.insertString(doc.getLength(), "Synonyms\n", header);
-						doc.insertString(doc.getLength(), "\n1.Synonym ", null);
+						doc.insertString(doc.getLength(), "\n1.No Synonyms to display.  Choose a word. ", null);
 						doc.insertString(doc.getLength(), "\n\n", null);
 						doc.insertString(doc.getLength(), "Antonyms\n", header);
-						doc.insertString(doc.getLength(), "\n1.Antonym ", null);
+						doc.insertString(doc.getLength(), "\n1.No Antonyms to display.  Choose a word. ", null);
 					} catch (FileNotFoundException | BadLocationException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -550,10 +550,10 @@ public class Dictionary {
 								"1. Example Word (pos) \n\n    No definitions to display.  Choose a word.\n\n", null);
 						doc.insertString(doc.getLength(), "\n", null);
 						doc.insertString(doc.getLength(), "Synonyms\n", header);
-						doc.insertString(doc.getLength(), "\n1.Synonym ", null);
+						doc.insertString(doc.getLength(), "\n1.No Synonyms to display.  Choose a word. ", null);
 						doc.insertString(doc.getLength(), "\n\n", null);
 						doc.insertString(doc.getLength(), "Antonyms\n", header);
-						doc.insertString(doc.getLength(), "\n1.Antonym ", null);
+						doc.insertString(doc.getLength(), "\n1.No Antonyms to display.  Choose a word. ", null);
 					} catch (FileNotFoundException | BadLocationException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -602,10 +602,10 @@ public class Dictionary {
 							null);
 					doc.insertString(doc.getLength(), "\n", null);
 					doc.insertString(doc.getLength(), "Synonyms\n", header);
-					doc.insertString(doc.getLength(), "\n1.Synonym ", null);
+					doc.insertString(doc.getLength(), "\n1.No Synonyms to display.  Choose a word. ", null);
 					doc.insertString(doc.getLength(), "\n\n", null);
 					doc.insertString(doc.getLength(), "Antonyms\n", header);
-					doc.insertString(doc.getLength(), "\n1.Antonym ", null);
+					doc.insertString(doc.getLength(), "\n1.No Antonyms to display.  Choose a word. ", null);
 				} catch (BadLocationException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
