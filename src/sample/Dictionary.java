@@ -322,9 +322,14 @@ public class Dictionary {
 		list.setModel(DLM);
 
 		JRadioButton rdbtnNewRadioButton = new JRadioButton("Asc");
+		rdbtnNewRadioButton.setFont(new Font("Calibri", Font.PLAIN, 13));
+		rdbtnNewRadioButton.setBackground(Color.PINK);
 		JRadioButton rdbtnNewRadioButton_1 = new JRadioButton("Desc");
+		rdbtnNewRadioButton_1.setFont(new Font("Calibri", Font.PLAIN, 13));
+		rdbtnNewRadioButton_1.setBackground(Color.PINK);
 
 		JButton btnNewButton = new JButton("Add");
+		btnNewButton.setFont(new Font("Calibri", Font.PLAIN, 13));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				cardLayout.show(panel, "addWord");
@@ -336,7 +341,7 @@ public class Dictionary {
 
 			}
 		});
-		btnNewButton.setBounds(2, 11, 89, 23);
+		btnNewButton.setBounds(10, 11, 89, 23);
 		dictionaryFrame.getContentPane().add(btnNewButton);
 
 		btnNewButton_2.addActionListener(new ActionListener() {
@@ -399,10 +404,10 @@ public class Dictionary {
 						}
 						list.setModel(DLM);
 					} else {
-						JOptionPane.showMessageDialog(null, "Amount of definitions and parts of speech do not match!");
+						JOptionPane.showMessageDialog(null, "The parts of speech don't correspond to the definitions!");
 					}
 				} else {
-					JOptionPane.showMessageDialog(null, "Required field was left empty!");
+					JOptionPane.showMessageDialog(null, "You didn't fill in a required field!");
 				}
 
 				cardLayout.show(panel, "defintions");
@@ -410,6 +415,7 @@ public class Dictionary {
 		});
 
 		JButton btnNewButton_1 = new JButton("Remove");
+		btnNewButton_1.setFont(new Font("Calibri", Font.PLAIN, 13));
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				List<String> selectedWords = list.getSelectedValuesList();
@@ -427,7 +433,7 @@ public class Dictionary {
 					}
 					if (wordFound) {
 						int dialogResult = JOptionPane.showConfirmDialog(null,
-								"Are you sure you want to delete the following word(s)\nfrom the ditionary?\n\nThis action cannot be undone.\n\n",
+								"Are you sure you want to delete the following word(s)?\n\nThis action cannot be undone.\n\n",
 								"Warning", JOptionPane.YES_NO_OPTION);
 						if (dialogResult == JOptionPane.YES_OPTION) {
 							for (Word word : wordsToRemove) {
@@ -497,12 +503,12 @@ public class Dictionary {
 		dictionaryFrame.getContentPane().add(scrollPane);
 
 		buttonGroup.add(rdbtnNewRadioButton);
-		rdbtnNewRadioButton.setBounds(36, 78, 59, 23);
+		rdbtnNewRadioButton.setBounds(32, 84, 59, 23);
 		dictionaryFrame.getContentPane().add(rdbtnNewRadioButton);
 		rdbtnNewRadioButton.setSelected(true);
 
 		buttonGroup.add(rdbtnNewRadioButton_1);
-		rdbtnNewRadioButton_1.setBounds(110, 78, 59, 23);
+		rdbtnNewRadioButton_1.setBounds(111, 84, 59, 23);
 		dictionaryFrame.getContentPane().add(rdbtnNewRadioButton_1);
 		rdbtnNewRadioButton_1.addItemListener(new ItemListener() {
 			@Override
@@ -607,7 +613,7 @@ public class Dictionary {
 
 			}
 		});
-		txtSearch.setBounds(12, 45, 179, 20);
+		txtSearch.setBounds(12, 40, 179, 41);
 		dictionaryFrame.getContentPane().add(txtSearch);
 		txtSearch.setColumns(10);
 	}

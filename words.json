@@ -2650,37 +2650,6 @@
     ]
   },
   {
-    "word": "gravity",
-    "definitions": [
-      {
-        "definition": "(physics) the force of attraction between all masses in the universe; especially the attraction of the earth\u0027s mass for bodies near its surface",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a solemn and dignified feeling",
-        "partOfSpeech": "noun"
-      },
-      {
-        "definition": "a manner that is serious and solemn",
-        "partOfSpeech": "noun"
-      }
-    ],
-    "synonyms": [
-      "gravitation",
-      "gravitational attraction",
-      "gravitational force",
-      "solemnity",
-      "graveness",
-      "soberness",
-      "sobriety",
-      "somberness",
-      "sombreness"
-    ],
-    "antonyms": [
-      "levity"
-    ]
-  },
-  {
     "word": "material",
     "definitions": [
       {
@@ -2858,32 +2827,6 @@
       "bureau",
       "federal agency",
       "government agency"
-    ],
-    "antonyms": []
-  },
-  {
-    "word": "judicial",
-    "definitions": [
-      {
-        "definition": "relating to the administration of justice or the function of a judge",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "expressing careful judgment",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "decreed by or proceeding from a court of justice",
-        "partOfSpeech": "adjective"
-      },
-      {
-        "definition": "belonging or appropriate to the office of a judge"
-      }
-    ],
-    "synonyms": [
-      "juridic",
-      "juridical",
-      "discriminative"
     ],
     "antonyms": []
   },
@@ -3529,14 +3472,5 @@
       "science laboratory"
     ],
     "antonyms": []
-  },
-  {
-    "word": "ok",
-    "definitions": [
-      {
-        "definition": "zoomer",
-        "partOfSpeech": "yeet"
-      }
-    ]
   }
 ]
